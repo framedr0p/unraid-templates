@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SoulSync</Name>
+  <Repository>boulderbadgedad/soulsync:latest</Repository>
+  <Registry>https://hub.docker.com/r/boulderbadgedad/soulsync</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Nezreka/SoulSync</Support>
+  <Project>https://github.com/Nezreka/SoulSync</Project>
+  <Overview>Automated music discovery and collection manager. Sync Spotify/Tidal/YouTube playlists to Plex/Jellyfin via Soulseek.</Overview>
+  <Category>MediaApp:Music</Category>
+  <WebUI>http://[IP]:[PORT:8008]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Nezreka/SoulSync/main/assets/trans.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1758479462</DateInstalled>
+  <DonateText>Support Development</DonateText>
+  <DonateLink>https://ko-fi.com/boulderbadgedad</DonateLink>
+  <Requires>slskd container or standalone installation</Requires>
+  <Config Name="WebUI Port" Target="8008" Default="8008" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false">8008</Config>
+  <Config Name="Spotify OAuth Port" Target="8888" Default="8888" Mode="tcp" Description="Spotify OAuth callback port" Type="Port" Display="always" Required="true" Mask="false">8888</Config>
+  <Config Name="Tidal OAuth Port" Target="8889" Default="8889" Mode="tcp" Description="Tidal OAuth callback port" Type="Port" Display="always" Required="true" Mask="false">8889</Config>
+  <Config Name="Config" Target="/app/config/config.json" Default="/mnt/user/appdata/soulsync/config.json" Mode="rw" Description="Configuration files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/soulsync/config.json</Config>
+  <Config Name="Logs" Target="/app/logs" Default="/mnt/user/appdata/soulsync/logs" Mode="rw" Description="Log files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/soulsync/logs</Config>
+  <Config Name="Music Share" Target="/host/music" Default="/mnt/user/Musik" Mode="rw" Description="Your music share for downloads and library" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Musik</Config>
+  <Config Name="Database Volume" Target="/app/data" Default="/mnt/user/appdata/soulsync/database" Mode="rw" Description="Database volume (leave empty for named volume)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/soulsync/database</Config>
+  <TailscaleStateDir/>
+</Container>
