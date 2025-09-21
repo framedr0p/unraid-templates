@@ -26,7 +26,7 @@
   <Config Name="Tidal OAuth Port" Target="8889" Default="8889" Mode="tcp" Description="Tidal OAuth callback port" Type="Port" Display="always" Required="true" Mask="false">8889</Config>
   <Config Name="Config" Target="/app/config/config.json" Default="/mnt/user/appdata/soulsync/config.json" Mode="rw" Description="Configuration files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/soulsync/config.json</Config>
   <Config Name="Logs" Target="/app/logs" Default="/mnt/user/appdata/soulsync/logs" Mode="rw" Description="Log files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/soulsync/logs</Config>
-  <Config Name="Music Share" Target="/host/music" Default="/mnt/user/Musik" Mode="rw" Description="Your music share for downloads and library" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Musik</Config>
+  <Config Name="Music Share" Target="/host/music" Default="/mnt/user/Music" Mode="rw" Description="Your music share for downloads and library" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Database Volume" Target="/app/data" Default="/mnt/user/appdata/soulsync/database" Mode="rw" Description="Database volume (leave empty for named volume)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/soulsync/database</Config>
   <TailscaleStateDir/>
 </Container>
