@@ -1,12 +1,4 @@
 <?xml version="1.0"?>
-<Maintainer>
-  <Icon>https://github.com/framedr0p/unraid-templates/blob/master/avatar.jpeg</Icon>
-  <Profile>
-      I'm new so be kind :-D
-  </Profile>
-  <DonateLink>https://paypal.me/mex990</DonateLink>
-  <DonateText>If you like my work please consider Donating.</DonateText>
-</Maintainer>
 <Container version="2">
   <Name>SoulSync</Name>
   <Repository>boulderbadgedad/soulsync:latest</Repository>
